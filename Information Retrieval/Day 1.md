@@ -5,9 +5,10 @@ Using incidence vectors and Boolean model ( bitwise operation )
 -------------
 
 ex) Search Word = t[i]
-	t[1] 과 t[2] 를 포함하고 t[3] 를 포함하지 않는 document 를 찾아라.
-	=>		docu 1		docu 2		docu 3
 
+	t[1] 과 t[2] 를 포함하고 t[3] 를 포함하지 않는 document 를 찾아라.
+	
+	=>		docu 1		docu 2		docu 3
 	t[1]	  1			  1		       0
 	t[2]	  1			  0			   1
 	t[3]	  0			  1			   0
@@ -21,10 +22,12 @@ ex) Search Word = t[i]
 Incidences matrix problem
 -------------
 
-1. Document 가 많아지면 해당 필요 Bit 가 많아진다. ( *Bigger Collections* )
+1.  Document 가 많아지면 해당 필요 Bit 가 많아진다. ( *Bigger Collections* )
+
    ex) 100,0000 Document 있을시 100,00000 bit 필요
 
-2. 해당 boolean model 에서 bit 의 낭비가 심하다.
+2.  해당 boolean model 에서 bit 의 낭비가 심하다.
+
    ex) 보통 1 M bit 중 1000 개의 bit 만이 1의 값을 가짐 ( 0가 많아 공간낭비 )
 
 
@@ -34,6 +37,7 @@ Incidences matrix problem
 =============
 
 Search Word = t[i] , t[i] 를 포함하는 Document 의 DocId 를 list 에 저장함.
+
 ( Identify each document by docId / Size 를 줄이기 위해 document url 대신 docId 사용함. )
 
 How to convert DocId to Url ? => Hashing or B-Tree
@@ -55,7 +59,7 @@ ex) Search Word = t[i]
 Inverted index problem
 ------------
 
-1. List 중간에 DocId 삽입시 overhead 증가 -> B+ Tree 사용
+1.  List 중간에 DocId 삽입시 overhead 증가 -> B+ Tree 사용
 
 
 
