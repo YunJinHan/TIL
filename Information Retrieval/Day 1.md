@@ -22,11 +22,11 @@ ex) Search Word = t[i]
 Incidences matrix problem
 -------------
 
-1.  Document 가 많아지면 해당 필요 Bit 가 많아진다. ( *Bigger Collections* )
+1.&nbsp;&nbsp;Document 가 많아지면 해당 필요 Bit 가 많아진다. ( *Bigger Collections* )
 
    ex) 100,0000 Document 있을시 100,00000 bit 필요
 
-2.  해당 boolean model 에서 bit 의 낭비가 심하다.
+2.&nbsp;&nbsp;해당 boolean model 에서 bit 의 낭비가 심하다.
 
    ex) 보통 1 M bit 중 1000 개의 bit 만이 1의 값을 가짐 ( 0가 많아 공간낭비 )
 
@@ -49,7 +49,7 @@ ex) Search Word = t[i]
 	t[3] = { 7, 13, 15, ... }
 	
 	t[i] => Dictionary
-	{ ... } => List ( set of datastructure and has variable length of each list , sort by DocId)
+	{ ... } => List ( set of datastructure and has variable length of each list , sort by DocId )
 
 	=> 1, 2, 4, ... -> DocId
 
@@ -59,7 +59,7 @@ ex) Search Word = t[i]
 Inverted index problem
 ------------
 
-1.  List 중간에 DocId 삽입시 overhead 증가 -> B+ Tree 사용
+1.&nbsp;&nbsp;List 중간에 DocId 삽입시 overhead 증가 -> B+ Tree 사용
 
 
 
