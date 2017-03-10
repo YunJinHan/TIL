@@ -24,7 +24,7 @@ Incidences matrix problem
 
 1.&nbsp;&nbsp;Document 가 많아지면 해당 필요 Bit 가 많아진다. ( *Bigger Collections* )
 
-   ex) 100,0000 Document 있을시 100,00000 bit 필요
+   ex) 1,000,000 Document 있을시 10,000,000 bit 필요
 
 2.&nbsp;&nbsp;해당 boolean model 에서 bit 의 낭비가 심하다.
 
