@@ -1,4 +1,4 @@
-Objecyt-Oriented Software Development Process
+Object-Oriented Software Development Process
 =============
 
 3 Points of successful software
