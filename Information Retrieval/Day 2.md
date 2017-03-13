@@ -18,18 +18,18 @@ Inverted Index Construction
 Initial Stages of Text Processing
 -------------
 
-#### Normalization
+### Normalization
 ##### Map text and query term to same form
 ex) you want U.S.A and USA to match
 
-#### Tokenization
+### Tokenization
 ##### Cut Character sequence into word tokens
 
-#### Stemming (어근)
+### Stemming (어근)
 ##### we may wish different forms of a root to match
 ex) computer, computing, computation .. => compute
 
-#### Stop words
+### Stop words
 ##### we may omit very common words (or not)
 ex) the, a, of, to ...
 
@@ -37,22 +37,22 @@ ex) the, a, of, to ...
 Indexer step 
 -------------
 
-#### Step 1) Token sequence
+### Step 1) Token sequence
 ####		 sequence of ( Modified token, docID ) paris
 
-#### Step 2) Sorts
+### Step 2) Sorts
 ####		 sort by terms and docID
 
-#### Step 3) Dictionary & Postings
-####		 - 1. Multiple term entries in a single document are merged
-			 - 2. Split into dictionary and posting
-			 - 3. Document frequency information is added
-			 => Has O(nlogn) time -> using Map Reduce to reduce time
+### Step 3) Dictionary & Postings
+#### - 1. Multiple term entries in a single document are merged
+#### - 2. Split into dictionary and posting
+#### - 3. Document frequency information is added
+=> Has O(nlogn) time -> using Map Reduce to reduce time
 
-ex) Doc1 boy deep fire sea
-	Doc2 nation sea deep
-	Doc3 nation apple fire ban
-	Doc4 nine nation boy people
+ex) Doc1 boy deep fire sea<br>
+	Doc2 nation sea deep<br>
+	Doc3 nation apple fire ban<br>
+	Doc4 nine nation boy people<br>
 
 	step 1. (boy, doc1) (deep, doc1) (fire, doc1) (sea, doc1)
 			(nation, doc2) (sea, doc2) (deep, doc2)
@@ -89,10 +89,10 @@ ex) Doc1 boy deep fire sea
 
 Query Processing
 -------------
-#### * AND operation
-	   (consider processing the query A AND B)
-#### * Locate A in Dictionary
-#### * Locate B in Dictionary
-#### * Merge the two posting and find interested things
+#### Step 1). AND operation
+(consider processing the query A AND B)
+#### Step 2). Locate A in Dictionary
+#### Step 3). Locate B in Dictionary
+#### Step 4). Merge the two posting and find interested things
 
 
