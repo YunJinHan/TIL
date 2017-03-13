@@ -10,8 +10,7 @@ Inverted Index Construction
 			▼
 		Linguistic Modules		friend, are, roman
 			▼
-		Indexer					friend -> posting = 
-		(2, 4, ...)
+		Indexer					friend -> posting = (2, 4, ...)
 								roman -> posting = (13, 16 ...)
 
 
@@ -102,9 +101,9 @@ But! hash table 크기가 현실적으로 매우커서 메모리에 상주하게
 - pointer X ▼<br>
   'A' :  word1 / word2 ...<br>
   pointer Y ▼<br>
-  'B' :  word2 / word8 ...<br>
+  'B' :  word2 / word8 ...<br><br>
   Two pointer x, y => 해당 포인터 값이 더 작은게 한칸씩 이동하며 비교<br>
-  포인터 값끼리 비교하며 같은 값이 있는 경우 뽑아냄<br>
+  포인터 값끼리 비교하며 같은 값이 있는 경우 뽑아냄<br><br>
   if A length is A' and B length is B' , O(A'+B') linear time<br>
   **Curial : Each posting must be sorted by DocId**
 
