@@ -96,7 +96,7 @@ Query Processing
 #### Step 2). Locate A in Dictionary
 #### Step 3). Locate B in Dictionary
 #### Step 4). Merge the two posting and find interested things
-- 'A' token Dictionary / 'B' token Dictionary -> insert hash table == O(n) time
+- 'A' token Dictionary / 'B' token Dictionary -> insert hash table == O(n) time<br>
 But! hash table 크기가 현실적으로 매우커서 메모리에 상주하게 두고 검색 불가능
 
 - pointer X ▼
@@ -104,8 +104,8 @@ But! hash table 크기가 현실적으로 매우커서 메모리에 상주하게
   pointer Y ▼
   'B' :  word2 / word8 ...
 
-  Two pointer x, y => 해당 포인터 값이 더 작은게 한칸씩 이동하며 비교
-  포인터 값끼리 비교하며 같은 값이 있는 경우 뽑아냄
+  Two pointer x, y => 해당 포인터 값이 더 작은게 한칸씩 이동하며 비교<br>
+  포인터 값끼리 비교하며 같은 값이 있는 경우 뽑아냄<br>
   if A length is A' and B length is B' , O(A'+B') linear time
   **Curial : Each posting must be sorted by DocId**
 
