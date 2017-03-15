@@ -13,13 +13,13 @@ Reasons of Using Object-Oriented Programming
 
 etc.
 
-####Reuse is not usually achieved or worthwhile at the object-level
-#####(객체 하나하나의 재사용은 효과가 크지 않다.)
+Reuse is not usually achieved or worthwhile at the object-level<br>
+객체 하나하나의 재사용은 효과가 크지 않다.)
 
-####But Reuse of architecture, analysis and design patterns is usually achieved
-#####(framework 나 design pattern 의 재사용은 효과가 크다.)
+But Reuse of architecture, analysis and design patterns is usually achieved<br>
+framework 나 design pattern 의 재사용은 효과가 크다.)
 
-####Design Pattern is a description of a **Problems / Solution** pair in a certain **Context**
+Design Pattern is a description of a **Problems / Solution** pair in a certain **Context**
 
 Reasons of Using Framework
 -------------
