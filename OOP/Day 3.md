@@ -11,15 +11,15 @@ Reasons of Using Object-Oriented Programming
 
 3. Cost savings
 
-...
+etc.
 
-##Reuse is not usually achieved or worthwhile at the object-level
-###(객체 하나하나의 재사용은 효과가 크지 않다.)
+####Reuse is not usually achieved or worthwhile at the object-level
+#####(객체 하나하나의 재사용은 효과가 크지 않다.)
 
-##But Reuse of architecture, analysis and design patterns is usually achieved
-###(framework 나 design pattern 의 재사용은 효과가 크다.)
+####But Reuse of architecture, analysis and design patterns is usually achieved
+#####(framework 나 design pattern 의 재사용은 효과가 크다.)
 
-##Design Pattern is a description of a **Problems / Solution** pair in a certain **Context**
+####Design Pattern is a description of a **Problems / Solution** pair in a certain **Context**
 
 Reasons of Using Framework
 -------------
@@ -31,7 +31,7 @@ Reasons of Using Framework
 3. Domain - specific
 
 
-To obtain flexible and reusable systems, it is better to base the structure of software on the **Object rather than on the **Actions**
+To obtain flexible and reusable systems, it is better to base the structure of software on the **Object** rather than on the **Actions**
 -------------
 
 => 재사용가능한 소프트웨어를 사용하기 위해서는 Object 기반 소프트웨어를 사용하는 것이 바람직하다.
