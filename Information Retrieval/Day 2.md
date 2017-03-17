@@ -6,7 +6,7 @@ Inverted Index Construction
 <pre>
 			Document			ex) Friends are Romans
 				▼
-			Tokenizer				Friends, are, Romans
+			Tokenizer			Friends, are, Romans
 				▼
 			Linguistic Modules		friend, are, roman
 				▼
