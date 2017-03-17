@@ -4,13 +4,13 @@ Inverted Index
 Inverted Index Construction
 -------------
 	   
-	    Document			ex) Friends are Romans
-	    	▼
-		Tokenizer				Friends, are, Romans
-			▼
-		Linguistic Modules		friend, are, roman
-			▼
-		Indexer					friend -> posting = (2, 4, ...)
+&nbsp;&nbsp;&nbsp;Document			ex) Friends are Romans
+&nbsp;&nbsp;&nbsp;&nbsp;▼
+&nbsp;&nbsp;&nbsp;Tokenizer				Friends, are, Romans
+&nbsp;&nbsp;&nbsp;&nbsp;▼
+&nbsp;&nbsp;&nbsp;Linguistic Modules		friend, are, roman
+&nbsp;&nbsp;&nbsp;&nbsp;▼
+&nbsp;&nbsp;&nbsp;Indexer					friend -> posting = (2, 4, ...)
 								roman -> posting = (13, 16 ...)
 
 
