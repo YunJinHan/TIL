@@ -3,16 +3,16 @@ Inverted Index
 
 Inverted Index Construction
 -------------
-	   
-&nbsp;&nbsp;&nbsp;Document			ex) Friends are Romans<br>
-&nbsp;&nbsp;&nbsp;&nbsp;▼<br>
-&nbsp;&nbsp;&nbsp;Tokenizer				Friends, are, Romans<br>
-&nbsp;&nbsp;&nbsp;&nbsp;▼<br>
-&nbsp;&nbsp;&nbsp;Linguistic Modules		friend, are, roman<br>
-&nbsp;&nbsp;&nbsp;&nbsp;▼<br>
-&nbsp;&nbsp;&nbsp;Indexer					friend -> posting = (2, 4, ...)<br>
-								roman -> posting = (13, 16 ...)<br>
-
+<pre>
+			Document			ex) Friends are Romans
+				▼
+			Tokenizer				Friends, are, Romans
+				▼
+			Linguistic Modules		friend, are, roman
+				▼
+			Indexer					friend -> posting = (2, 4, ...)
+									roman -> posting = (13, 16 ...)
+</pre>
 
 Initial Stages of Text Processing
 -------------
