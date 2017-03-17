@@ -6,9 +6,9 @@ Inverted Index Construction
 <pre>
 			Document			ex) Friends are Romans
 				▼
-			Tokenizer			Friends, are, Romans
+			Tokenizer				Friends, are, Romans
 				▼
-			Linguistic Modules			friend, are, roman
+			Linguistic Modules		friend, are, roman
 				▼
 			Indexer				friend -> posting = (2, 4, ...)
 							roman -> posting = (13, 16 ...)
