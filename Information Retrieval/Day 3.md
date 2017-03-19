@@ -23,7 +23,7 @@ Completeness
 <br>
 Prove that the algorithm INTERSECTION finds the complete list of common docIDs
 <br>
-**Proof by mathematical induction**
+Proof by mathematical induction
 
 1. Premise<br>
 Lists L1 and L2 share a set of common docIDs <d1, d2, .., dn> which are in the increasing order
@@ -49,7 +49,7 @@ Lists L1 and L2 share a set of common docIDs <d1, d2, .., dn> which are in the i
 &nbsp;&nbsp;===> Thus, At the beginning of next Iteration, the loop invariant is still true
 <br>
 <br>
-4. Temination<br>
+&nbsp;&nbsp;4. Temination<br>
 &nbsp;&nbsp;For simple proof, assume docId(NULL) = d(Last number) > d(n)<br>
 &nbsp;&nbsp;W.L.O.G , Let's say p1 = NULL . That is d(n) < docId(p1) <= d(L) and d(n) < docId(p2) <= d(L) <br>
 &nbsp;&nbsp;By the Loop invariant, answer is {d0, ..., d(n)}
