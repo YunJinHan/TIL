@@ -44,11 +44,12 @@ Lists L1 and L2 share a set of common docIDs <d1, d2, .., dn> which are in the i
 		d(i-1) < docId(p1) <= d(i)
 		d(i-1) < docId(p2) <= d(i)
 </pre>
-=> p1 이나 p2 가 shift 되면 d(i)보다 커질수 있다?<br>
-===>  아니다. Loop Invariant 에서 어긋남<br>
-===> Thus, At the beginning of next Iteration, the loop invariant is still true
+&nbsp;&nbsp;=> p1 이나 p2 가 shift 되면 d(i)보다 커질수 있다?<br>
+&nbsp;&nbsp;===>  아니다. Loop Invariant 에서 어긋남<br>
+&nbsp;&nbsp;===> Thus, At the beginning of next Iteration, the loop invariant is still true
+<br>
 <br>
 4. Temination<br>
-For simple proof, assume docId(NULL) = d(Last number) > d(n)<br>
-W.L.O.G , Let's say p1 = NULL . That is d(n) < docId(p1) <= d(L) and d(n) < docId(p2) <= d(L) <br>
-By the Loop invariant, answer is {d0, ..., d(n)}
+&nbsp;&nbsp;For simple proof, assume docId(NULL) = d(Last number) > d(n)<br>
+&nbsp;&nbsp;W.L.O.G , Let's say p1 = NULL . That is d(n) < docId(p1) <= d(L) and d(n) < docId(p2) <= d(L) <br>
+&nbsp;&nbsp;By the Loop invariant, answer is {d0, ..., d(n)}
