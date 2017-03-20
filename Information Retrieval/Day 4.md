@@ -69,7 +69,7 @@ Positional indexes
 3. Same general method for proximity searches
 
 "to be or not to be" -> "to" "be" "to" "be"<br>
-Index -> "to" 0 / "be" 1 / "to" 4 / "be" 5<br>
+Index -> "to" 0 / "be" 1 / "to" 4 / "be" 5<br><br>
 1 / 2 과정<br>
 ![screenshot](img/positionalIndexes.png)
 <br>3 과정<br>
