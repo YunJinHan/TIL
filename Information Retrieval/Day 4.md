@@ -54,10 +54,10 @@ Biword indexes
 - Index every consecutive pair of terms in the text as a phrase
 - Each of these biwords is now a dictionary term
 
-Problem<br>
+#Problem
 Longer phrase queries -> n words ==> (n+1)Combination(2) ==> O(n^2)<br>
 Index blowup due to bigger dictionary<br>
-Infeasible for more than biwords, big even for them
+Infeasible for more than biwords, big even for them<br>
 ex)
 A B C D E -> there is 6 position to stand words<br>
 So (6)Combination(2) biwords exists<br>
@@ -67,8 +67,12 @@ Positional indexes
 1. Extract inverted index entries for each distinct term
 2. Merge their doc: position lists to enumerate all positions with terms
 3. Same general method for proximity searches
-<br>
-ex)
+
+![screenshot](img/positional indexes.jpg)
+
+
+
+
 
 
 
