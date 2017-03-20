@@ -68,7 +68,7 @@ Positional indexes
 2. Merge their doc: position lists to enumerate all positions with terms
 3. Same general method for proximity searches
 
-![screenshot](img/positional indexes.png)
+![screenshot](/img/positionalIndexes.png)
 
 
 
