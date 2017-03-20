@@ -68,15 +68,15 @@ Positional indexes
 2. Merge their doc: position lists to enumerate all positions with terms
 3. Same general method for proximity searches
 
-"to be or not to be" -> "to" "be" "to" "be"
-                 Index    0    1    4    5
-1 / 2 과정
+"to be or not to be" -> "to" "be" "to" "be"<br>
+Index -> "to" 0 / "be" 1 / "to" 4 / "be" 5<br>
+1 / 2 과정<br>
 ![screenshot](img/positionalIndexes.png)
-3 과정
+<br>3 과정<br>
 ![screenshot](img/positionalIndexes2.png)
-DocId 가 다르면 포인터를 다음 DocId 로 옮긴다.
+<br>DocId 가 다르면 포인터를 다음 DocId 로 옮긴다.
 <br>
-==> 429/430 (first to be) , 433/434 (second to be)
+Result ==> 429/430 (first to be) , 433/434 (second to be)
 
 
 
