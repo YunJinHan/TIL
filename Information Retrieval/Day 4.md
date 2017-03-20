@@ -40,11 +40,13 @@ Boolean Queries are queries using AND, OR and NOT to join query terms / Perhaps 
 - Is precise: document matches condition or not<br>
 ==> set : word 의 order / frequency 는 고려하지 않는다.
 
-Example: WestLaw
+Example - WestLaw
 ------------
-LIMIT! /3 STATUTE ACTION /S FEDERAL /2 TORT /3 CLAIM<br>
-blank : or operation<br>
-~! : start with prefix ( ex LIMIT 로 시작하는 단어 )<br>
+<pre>
+LIMIT! /3 STATUTE ACTION /S FEDERAL /2 TORT /3 CLAIM
+blank : or operation
+~! : start with prefix ( ex LIMIT 로 시작하는 단어 )
+</pre>
 <br>
 Phrase queries
 ============
