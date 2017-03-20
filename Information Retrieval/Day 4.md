@@ -51,8 +51,8 @@ Phrase queries
 ============
 Biword indexes
 ------------
-- Index every consecutive pair of terms in the text as a phrase<br>
-- Each of these biwords is now a dictionary term<br>
+- Index every consecutive pair of terms in the text as a phrase
+- Each of these biwords is now a dictionary term
 
 Problem<br>
 Longer phrase queries -> n words ==> (n+1)Combination(2) ==> O(n^2)<br>
@@ -61,7 +61,7 @@ Infeasible for more than biwords, big even for them
 ex)
 A B C D E -> there is 6 position to stand words<br>
 So (6)Combination(2) biwords exists<br>
-<br>
+
 Positional indexes
 ------------
 1. Extract inverted index entries for each distinct term
