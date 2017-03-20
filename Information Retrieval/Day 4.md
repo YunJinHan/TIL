@@ -38,7 +38,8 @@ Boolean queries
 Boolean Queries are queries using AND, OR and NOT to join query terms / Perhaps the simplest model to build an IR system on<br>
 - Views each document as a **set** of words<br>
 - Is precise: document matches condition or not<br>
-==> set : word 의 order / frequency 는 고려하지 않는다.<br>
+==> set : word 의 order / frequency 는 고려하지 않는다.
+
 Example: WestLaw
 ------------
 LIMIT! /3 STATUTE ACTION /S FEDERAL /2 TORT /3 CLAIM<br>
@@ -47,7 +48,6 @@ blank : or operation<br>
 <br>
 Phrase queries
 ============
-<br>
 Biword indexes
 ------------
 - Index every consecutive pair of terms in the text as a phrase<br>
