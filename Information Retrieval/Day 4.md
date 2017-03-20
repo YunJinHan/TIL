@@ -1,5 +1,5 @@
 Intersecting two postings lists ( Continue )
-============
+------------
 AND NOT (p1, p2) -> p1 에는 있고 p2 에는 없는것
 <pre>
 Intersect AND NOT (p1,p2)
@@ -32,10 +32,10 @@ Intersect OR (p1,p2)
 	        add(answer, p1)
 	        p1 <- next(p1)
 </pre>
-<br>
+
 <br>
 Boolean queries
-============
+------------
 Boolean Queries are queries using AND, OR and NOT to join query terms / Perhaps the simplest model to build an IR system on<br>
 - Views each document as a **set** of words<br>
 - Is precise: document matches condition or not<br>
@@ -48,9 +48,11 @@ LIMIT! /3 STATUTE ACTION /S FEDERAL /2 TORT /3 CLAIM<br>
 blank : or operation<br>
 ~! : start with prefix ( ex LIMIT 로 시작하는 단어 )<br>
 <br>
-Phrase queries
-============
+
+**Phrase queries**
+------------
 <br>
+
 Biword indexes
 ------------
 - Index every consecutive pair of terms in the text as a phrase<br>
@@ -58,8 +60,8 @@ Biword indexes
 
 **Problem**<br>
 Longer phrase queries -> n words ==> (n+1)Combination(2) ==> O(n^2)<br>
-**Index blowup due to bigger dictionary**<br>
-**Infeasible for more than biwords, big even for them**
+Index blowup due to bigger dictionary<br>
+Infeasible for more than biwords, big even for them
 ex)
 A B C D E -> there is 6 position to stand words<br>
 So (6)Combination(2) biwords exists<br>
@@ -71,6 +73,7 @@ Positional indexes
 3. Same general method for proximity searches
 <br>
 ex)
+
 
 
 
