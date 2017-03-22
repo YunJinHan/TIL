@@ -6,11 +6,8 @@ Object-Oriented Paradigm builds on three import concepts
 4. (Additional) **Polymorphism**
 
 - Objects have **attributes** that help describe them
-<br>
 - Objects have externally observable behaviors<br>
 (aka **Services - 사용자관점** or **Responsibilites - 객체관점(Interface, Type)**)
-<br>
-<br>
 - Encapsulating state of object rather than expose it is good engineering<br>
 (Encapsulation : separatino of inerface from implementation)
 <br>
