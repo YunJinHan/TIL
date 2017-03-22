@@ -4,7 +4,7 @@ Object-Oriented Paradigm builds on three import concepts
 2. **Classes**
 3. **Inheritance**
 4. (Additional) **Polymorphism**
-<br>
+
 - Objects have **attributes** that help describe them
 <br>
 <br>
