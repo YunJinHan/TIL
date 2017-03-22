@@ -7,7 +7,6 @@ Object-Oriented Paradigm builds on three import concepts
 
 - Objects have **attributes** that help describe them
 <br>
-<br>
 - Objects have externally observable behaviors<br>
 (aka **Services - 사용자관점** or **Responsibilites - 객체관점(Interface, Type)**)
 <br>
