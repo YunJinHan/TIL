@@ -41,7 +41,7 @@ Ask not what you can do to objects, but Ask what objects can do for you
 Class is a group of ojbects with similar **attributes** and **behavior**
 ------------
 
-Class is a **Repository** for behavior and 
+Class is a **Repository** for behavior and<br>
 the internal representation of the associated objects
 ------------
 
