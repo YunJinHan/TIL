@@ -69,7 +69,7 @@ Secondary Indics
   to all the actual records with that particular search-key value
 - Secondary indics hav to be dense
 
-![screenshot](img/Secondary Indics.jpg)
+![screenshot](img/SecondaryIndics.jpg)
 
 Primary and Secondary Indics
 ------------
@@ -86,7 +86,7 @@ Multilevel Index
 - If even outer index is too large to fit in main memory, yet another level of index can be created, and so on
 - Indices at all levels must be updated on insertion or deletion from the file.
 
-![screenshot](img/Multilevel Index.jpg)
+![screenshot](img/MultilevelIndex.jpg)
 
 B+-Tree Index Files
 ============
