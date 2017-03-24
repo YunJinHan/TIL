@@ -51,9 +51,9 @@ Dense_Index_Files
 Dens-Index - Index record appears for every search-key value in the file.
 <br>
 ![screenshot](img/dense1.jpg)
-<br>
+
 - Dense index on dept_name, with instructor file sorted on dept_name
-<br>
+
 ![screenshot](img/dense2.jpg)
 
 Sparse_Index_Files
@@ -68,7 +68,7 @@ Secondary Indics
 - Indexed record points to a buket that contains pointer<br>
   to all the actual records with that particular search-key value
 - Secondary indics hav to be dense
-<br>
+
 ![screenshot](img/Secondary Indics.jpg)
 
 Primary and Secondary Indics
@@ -85,13 +85,13 @@ Multilevel Index
 - inner index – the primary index file
 - If even outer index is too large to fit in main memory, yet another level of index can be created, and so on
 - Indices at all levels must be updated on insertion or deletion from the file.
-<br>
+
 ![screenshot](img/Multilevel Index.jpg)
 
 B+-Tree Index Files
 ============
 
-A B+-tree is a rooted tree satisfying the following properties:
+B+-tree is a rooted tree satisfying the following properties:
 ------------
 - All paths from root to leaf are of the same length (balanced)<br>
 ==> Complete Binary Rebalanceing Tree
