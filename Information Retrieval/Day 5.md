@@ -44,12 +44,67 @@ Ordered Indics
 - In an **Ordered Index**, Index entries are stored sorted on the search key value
 - **Primary Index** (**Clustering index**): in sequentially ordered fiel, this index whose search key specifies the sequential order of the file.
 - **Secondary Index** ("non-clustering index"): ans index whose search by key specfiies an order diffent from the sequential of the file.
-<br>
-<br>
+
+
 Dense_Index_Files
 -------------
 Dens-Index - Index record appears for every search-key value in the file.
 <br>
-![screenshot]()(바램, 정준영);
+![screenshot](/img/dense1.jpg)
 <br>
---<<div 
+- Dense index on dept_name, with instructor file sorted on dept_name
+<br>
+![screenshot](/img/dense2.jpg)
+
+Sparse_Index_Files
+------------
+- contatins index records for only some search-key values
+- To locate a record with search key value k we<br>
+  Find index record with search-key value K we<br>
+  Search file sequentially starting at the reocord to which the index record points
+
+Secondary Indics
+------------
+- Indexed record points to a buket that contains pointer<br>
+  to all the actual records with that particular search-key value
+- Secondary indics hav to be dense
+<br>
+![screenshot](img/Secondary Indics.jpg)
+
+Primary and Secondary Indics
+------------
+- Indices offer substantial benefits when searching for records
+- BUT: Updating indices imposes **overhead** on database modification when a file is modifided, every index on the file must be updated.
+- Sequential scan using primary index is efficient, but **a sequential scan using a secondary index is expensive**
+
+Multilevel Index
+------------
+- If primary index does not fit in memory, access becomes expensive
+- Solution: treat primary index kept on disk as a sequential file and construct a sparse index on it.
+- outer index – a sparse index of primary index
+- inner index – the primary index file
+- If even outer index is too large to fit in main memory, yet another level of index can be created, and so on
+- Indices at all levels must be updated on insertion or deletion from the file.
+<br>
+![screenshot](/img/Multilevel Index.jpg)
+
+B+-Tree Index Files
+============
+
+A B+-tree is a rooted tree satisfying the following properties:
+------------
+- All paths from root to leaf are of the same length (balanced)<br>
+==> Complete Binary Rebalanceing Tree
+- **Each node that is not a root or a leaf has between [n/2] and n children**
+- **A leaf node has between [(n−1)/2] and n–1 values**
+- Special cases: <br>
+    1.If the root is not a leaf, it has at least 2 children.<br>
+    2.If the root is a leaf (that is, there are no other nodes in the tree), it can have between 0 and (n–1) values.<br>
+    Disk-base data structure (not main memory)<br>
+        - Page<br>
+    Fanout n of a node: the number of pointers out of the node<br>
+
+
+
+
+
