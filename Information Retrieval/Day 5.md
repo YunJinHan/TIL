@@ -50,11 +50,11 @@ Dense_Index_Files
 -------------
 Dens-Index - Index record appears for every search-key value in the file.
 <br>
-![screenshot](/img/dense1.jpg)
+![screenshot](img/dense1.jpg)
 <br>
 - Dense index on dept_name, with instructor file sorted on dept_name
 <br>
-![screenshot](/img/dense2.jpg)
+![screenshot](img/dense2.jpg)
 
 Sparse_Index_Files
 ------------
@@ -86,7 +86,7 @@ Multilevel Index
 - If even outer index is too large to fit in main memory, yet another level of index can be created, and so on
 - Indices at all levels must be updated on insertion or deletion from the file.
 <br>
-![screenshot](/img/Multilevel Index.jpg)
+![screenshot](img/Multilevel Index.jpg)
 
 B+-Tree Index Files
 ============
