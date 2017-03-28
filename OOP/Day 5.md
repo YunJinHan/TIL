@@ -44,6 +44,6 @@ Virtual function
 
 Nonvirtual function
 -----------------
-- to have derived classes inherit a function interfaces as well as a mandatory implementation (**overriding X == final method**)
+- to have derived classes inherit a function interfaces as well as a mandatory implementation<br>(**overriding X == final method**)
 
 
