@@ -44,6 +44,7 @@ obj.g() --> X<br>**
 **The compiler searches up starting from the STATIC type util it finds the invoked operation**
 
 <br>
+
 ### - CHECK DYNAMIC TYPE
 
 ![screenshot](img/check_dynamic_type.png)
