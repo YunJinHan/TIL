@@ -27,7 +27,7 @@ A subclasses can be assigned to its superclass, but not vice versa
 	- super class <---- sub class  &nbsp;&nbsp;O<br>
 	- sub class <---- super class  &nbsp;&nbsp;X<br>
 
-![screenshot](img/check static type.png)
+![screenshot](img/check_static_type.png)
 
 **obj.h(), obj.f() --> O<br>
 obj.g() --> X<br>**
@@ -39,7 +39,7 @@ obj.g() --> X<br>**
 
 **The compiler searches up starting from the STATIC type util it finds the invoked operation**
 
-![screenshot](img/check dynamic type.png)
+![screenshot](img/check_dynamic_type.png)
 
 **obj.h() ---> O ( E's h() )<br>
 obj.f() ---> O ( A's f() )<br>
