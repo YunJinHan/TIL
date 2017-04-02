@@ -1,11 +1,11 @@
 A reference ( or pointer ) variable has two types associated with it
 ----------------
-###- static type<br>
+### - static type
 - the type declared at program<br>
 - fixed and never changed<br>
 
 
-###- dynamic type<br>
+### - dynamic type
 - the type of object it actually refers to<br>
 - can be changed during lifetime<br>
 
@@ -24,8 +24,8 @@ jm = m; ---> ERROR!!
 A subclasses can be assigned to its superclass, but not vice versa
 -----------------
 - assign direction
-	- super class <---- sub class  &nbsp;&nbsp;O
-	- sub class <---- super class  &nbsp;&nbsp;X
+	- super class <---- sub class  &nbsp;&nbsp;O<br>
+	- sub class <---- super class  &nbsp;&nbsp;X<br>
 
 <br>
 
@@ -46,6 +46,7 @@ obj.g() --> X<br>**
 <br>
 
 ![screenshot](img/check dynamic type.png)
+
 <br>
 **obj.h() ---> O ( E's h() )<br>
 obj.f() ---> O ( A's f() )<br>
@@ -60,11 +61,12 @@ obj.h() ---> C's h()<br>**
 
 Actually, the determination of what behavior to perform may be made at compile-time or at run-time
 --------------
-###- At compile-time<br>
+<br>
+###- At compile-time
 - Static binding or Early binding<br>
 - Static functions in JAVA / C++<br>
 - Nonvirtual functions in C++<br>
 
-###- At run time<br>
+###- At run time
 - Dynamic binding or Late binding<br>
 - Virtual function in JAVA / C++<br>
