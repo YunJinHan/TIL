@@ -61,6 +61,8 @@ Example
 ### - Delete 24
 1.
 ![screenshot](img/b+_tree_deletion3.png)
+
+
 2.
 ![screenshot](img/b+_tree_deletion3_1.png)
 
