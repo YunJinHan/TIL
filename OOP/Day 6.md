@@ -27,6 +27,10 @@ A subclasses can be assigned to its superclass, but not vice versa
 	- super class <---- sub class  &nbsp;&nbsp;O<br>
 	- sub class <---- super class  &nbsp;&nbsp;X<br>
 
+<br>
+
+### - CHECK STATIC TYPE
+
 ![screenshot](img/check_static_type.png)
 
 **obj.h(), obj.f() --> O<br>
@@ -38,6 +42,9 @@ obj.g() --> X<br>**
 2. static type direction 으로 내려오면서 check<br>
 
 **The compiler searches up starting from the STATIC type util it finds the invoked operation**
+
+<br>
+### - CHECK DYNAMIC TYPE
 
 ![screenshot](img/check_dynamic_type.png)
 
