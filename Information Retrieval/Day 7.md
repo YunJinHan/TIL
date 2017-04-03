@@ -52,7 +52,7 @@ Deletion in B+ Trees
 	3. 부모에 Key 값이 한 개 있는 경우 ( Leaf Node 의 Key 값을 제외한 Key 값의 수 )
 		- 부모 또한 **Merge** 를 시도한다. 실패 한다면 형제 부모 Node 에서 Key 값을 빌려온다.
 	4. 부모에 Key 값이 아무것도 없는 경우 ( Leaf Node 의 Key 값을 제외한 Key 값의 수 )
-		- 부모가 형제 부모 Node 에서 Key 값을 빌려온다.
+		- 부모가 형제 부모 Node 에서 Key 값을 빌려온다. 실패 한다면 부모 또한 **Merge** 를 시도한다.
 
 <br>
 
@@ -66,4 +66,6 @@ Example
 2.
 ![screenshot](img/b+_tree_deletion3_1.png)
 
+
+try that N = 3 && insert 6, 8, 5, 7, 4 && delete 8 || delete 6 !!
 
