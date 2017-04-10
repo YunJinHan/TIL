@@ -1,4 +1,4 @@
-1. Term Document incidences matrix
+1.Term Document incidences matrix
 =============
 
 Using incidence vectors and Boolean model ( bitwise operation )
@@ -33,7 +33,7 @@ Incidences matrix problem
 
 
 
-2. Inverted index
+2.Inverted index
 =============
 
 Search Word = t[i] , t[i] 를 포함하는 Document 의 DocId 를 list 에 저장함.
