@@ -52,4 +52,9 @@ cat , dog ==>		  3
 
 ==> **d(s(i),t(j))** : s(i) 와  t(j) 를  비교하여 같다면 **0** 다르다면  **1** 를 가진다.
 
+![screenshot](img/editDistanceAlgorithm.png)
+
+==> **this algorithm has O(m-n) time Complexity**<br>
+==> **c(s(i),t(j))** : a(i) 와  b(j) 를  비교하여 같다면 **0** 다르다면  **1** 를 가진다.
+
 ![screenshot](img/editDistanceEx.png)
