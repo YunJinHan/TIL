@@ -55,7 +55,9 @@ SOUNDEX
 5. Remove all zeros from the resulting string ( **0 모두 지움** )
 6. Pad the resulting string with trailing zeros and return the first four positions ( **길이 맞추기 위해 0 padding** )
 
+<br>
 Example )
+
 ![screenshot](img/soundex.png)
 
 What queries can we process?
