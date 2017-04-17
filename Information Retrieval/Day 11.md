@@ -18,8 +18,8 @@ Blocked Sort-Based Indexing ( BSBI )
 ![screenshot](img/BSBI.png)
 
 
-**Run : 처음부터 끝까지 Seek 한다 -> 디스크 Seek 한번만 필요하게 저장이 되어있는 경우**
-
+**Run : 처음부터 끝까지 Seek 한다 -> 디스크 Seek 한번만 필요하게 저장이 되어있는 경우**<br>
+Disk 에서 Memory 로 한 Page 씩 읽어들임<br>**HIT / OS Caching ( 다음에 근처 Data 를 읽을 때 좀 더 빠르게 접근 가능**
 External Sorting Using Merge Sort
 ------
 ![screenshot](img/ExternalMergeSort.png)
@@ -35,7 +35,7 @@ Using **Quicksort** in Memory Pairs because mergesort has more memory space than
 
 ![screenshot](img/ExternalMergeSort3.png)
 
-Cost analysis
+Cost Analysis
 -------
 ![screenshot](img/costAnalysis.png)
 
