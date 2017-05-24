@@ -62,8 +62,7 @@ Mean Average Precision
 
 ### Average Precision
 
-
-![screenshot](img/average precision.png)
+![screenshot](img/average_precision.png)
 
 <pre>
 < Ranking #1 >
