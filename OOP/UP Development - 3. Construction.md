@@ -40,6 +40,7 @@ UP Development - 3.Construction
 
 ![screenshot](img/UML_Object_Icons.png)
 
+&nbsp;
 
 1. Communication Diagram
 ====
@@ -71,6 +72,7 @@ UP Development - 3.Construction
 ### Message Number Sequencing
 
 ![screenshot](img/message_numbering.png)
+<br>
 **( Unconditional Message )**<br>
 **메세지간의 인과관계를 부여하기 위해  k 번 메세지의 응답을 k.1 , k.2 … 로 표현한다.**
 
@@ -105,7 +107,6 @@ class ClassC {
 }
 …
 </pre>
-
 
 - **Conditional Messages**
 
