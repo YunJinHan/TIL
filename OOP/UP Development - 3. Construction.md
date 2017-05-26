@@ -140,6 +140,9 @@ for () {
 
 ![screenshot](img/Illustrating_Iterations.png)
 
+- **Active Objects & Asynchronous Messages**
+
+![screenshot](img/Active_Objects_&_Asynchronous_Messages.png)
 
 #### Example
 ![screenshot](img/classDiagram_ex.png)
