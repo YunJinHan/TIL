@@ -39,12 +39,12 @@ UP Development - 3.Construction
 ### UML Object Icons
 
 ![screenshot](img/UML_Object_Icons.png)
-
 &nbsp;
-
-1. Communication Diagram
+<br>
+&nbsp;
+1.Communication Diagram
 ====
-
+&nbsp;
 ### Illustrating Messages
 
 ![screenshot](img/Illustrating_Messages.png)
