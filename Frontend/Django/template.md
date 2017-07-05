@@ -8,19 +8,11 @@ rendering 전 파일은 template code /  rendering 후의 파일은 template fil
 
 #### template variable
 
-<pre><code>
-
-{{ variable }}
-
-</code></pre>
+​	{{ variable }}
 
 - 변수의 속성에 접근할 수 있는 . 표현식도 가능
 
-  <pre><code>
-
-  {{ foo.bar }}
-
-  </code></pre>
+  ​	{{ foo.bar }}
 
   - foo 가 사전 타입인지 확인 후 foo['bar'] 로 해석
   - foo 속성에 bar 가 있다면 foo.bar 로 변환
@@ -37,11 +29,7 @@ rendering 전 파일은 template code /  rendering 후의 파일은 template fil
 
 #### template tag
 
-<pre><code>
-
-{% tag %}
-
-</code></pre>
+​	{% tag %}
 
 - template tag 는 기본적으로 위와 같은 형식을 가짐
 
@@ -49,19 +37,23 @@ rendering 전 파일은 template code /  rendering 후의 파일은 template fil
 
 - {% for %}
 
-  <pre><code>
+  ~~~
+
+  ~~~
 
   <ul>
 
-  {% for user in Users %}
+  ​	{% for user in Users %}
 
-  ​	<li>{{ user.name }}</li>
+  ​		<li>{{ user.name }}</li>
 
-  {% endfor %}
+  ​	{% endfor %}
 
   </ul>
 
-  </code></pre>
+  ~~~
+
+  ~~~
 
   for tag 에 사용되는 변수
 
@@ -74,8 +66,6 @@ rendering 전 파일은 template code /  rendering 후의 파일은 template fil
   - forloop.parentloop - 중첩 루프에서 현재의 상위 루프에 접근 ( ex. forloop.parentloop.counter ... )
 
 - {% if %}
-
-  <pre><code>
 
   {% if user_list %}
 
@@ -91,49 +81,45 @@ rendering 전 파일은 template code /  rendering 후의 파일은 template fil
 
   {% endif %}
 
-  </code><pre>
-
   - {% if  %} 안에는 boolean 연산자 / 비교연산자 사용 가능
 
 - {% csrf_token %}
 
-  <pre><code>
+  ~~~
+
+  ~~~
 
   <form action="." method="POST">{% csrf_token %}
 
-  </code></pre>
+  ~~~
+
+  ~~~
 
   - POST 방식의 form 에서 CSRF 공격을 방지하기 위해 해당 tag 를 사용해야함
 
 - {% url %}
 
-  <pre><code>
-
   {% url 'namespace : view-name' arg1 arg2 %}
 
-  </code></pre>
-
   - namespace - urls.py 에 정의한 include() 에서 정의한 namespace (이름)
-
   - view-name - urls.py 에 URL 패턴에서 정의한 뷰 함수 / 패턴 이름
-
   - arg - 뷰 함수에서 사용하는 인자 ( 없을 수도 있고 여러개인 경우는 스페이스로 구분 )
 
-     
+  ~~~
 
-  <pre><code>
+  ~~~
 
   사용 <form action = "{% url 'polls:vote' question.id %}" method="POST">
 
   미사용 <form action = "/polls/3/vote/" method="POST">
 
-  </code></pre>
+  ~~~
+
+  ~~~
 
   - {% url %} tag 를 사용하여 손쉽게 작업
 
 - {% with %}
-
-  <pre><code>
 
   {% with total = User.count() %}
 
@@ -149,17 +135,11 @@ rendering 전 파일은 template code /  rendering 후의 파일은 template fil
 
   {% endwith %}
 
-  </code><pre>
-
   특정 값을 변수에 저장해 두는 기능
 
 - {% load %}
 
-  <pre><code>
-
   {% load somelibrary package.otherlibrary %}
-
-  </code></pre>
 
   사용자 정의 tag 및 filter 로딩
 
@@ -185,7 +165,11 @@ rendering 전 파일은 template code /  rendering 후의 파일은 template fil
 - template 상속을 통해 코드를 재사용 할 수 있게 한다.
 
 - baseParent.html
-  <pre><code>
+
+  ~~~
+
+  ~~~
+
   <html>
   <head>
 
@@ -221,10 +205,15 @@ rendering 전 파일은 template code /  rendering 후의 파일은 template fil
 
   </html>
 
-  </code></pre>
+  ~~~
+
+  ~~~
 
 - contentChild.html
-  <pre><code>
+
+  ~~~
+
+  ~~~
 
   {% extends "baseParent.html" %}
 
@@ -236,12 +225,14 @@ rendering 전 파일은 template code /  rendering 후의 파일은 template fil
 
   {% endblock %}
 
-  </code></pre>
+  ~~~
+
+  ~~~
 
 - contentChild.html 파일 rendering 결과
 
   - title -> World
-  - div id="content" -> <h1>Hello World</h1>
+  - div id="content" -> < h1>Hello World< /h1>
   - 나머지는 baseParent.html 에 따름
 
 - 일반적인 template inheritance 과정
