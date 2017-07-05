@@ -38,21 +38,11 @@ rendering 전 파일은 template code /  rendering 후의 파일은 template fil
 - {% for %}
 
   ~~~
-
-  ~~~
-
   <ul>
-
-  ​	{% for user in Users %}
-
-  ​		<li>{{ user.name }}</li>
-
-  ​	{% endfor %}
-
+  	{% for user in Users %}
+  		<li>{{ user.name }}</li>
+  	{% endfor %}
   </ul>
-
-  ~~~
-
   ~~~
 
   for tag 에 사용되는 변수
@@ -67,32 +57,22 @@ rendering 전 파일은 template code /  rendering 후의 파일은 template fil
 
 - {% if %}
 
+  ~~~
   {% if user_list %}
-
-  ​	Number of users : {{ user_list | length }}
-
+  	Number of users : {{ user_list | length }}
   {% elif user_list | length > 100 %}
-
-  ​	User full
-
+  	User full
   {% else %}
-
-  ​	No User	
-
+  	No User	
   {% endif %}
+  ~~~
 
   - {% if  %} 안에는 boolean 연산자 / 비교연산자 사용 가능
 
 - {% csrf_token %}
 
   ~~~
-
-  ~~~
-
   <form action="." method="POST">{% csrf_token %}
-
-  ~~~
-
   ~~~
 
   - POST 방식의 form 에서 CSRF 공격을 방지하기 위해 해당 tag 를 사용해야함
@@ -106,34 +86,25 @@ rendering 전 파일은 template code /  rendering 후의 파일은 template fil
   - arg - 뷰 함수에서 사용하는 인자 ( 없을 수도 있고 여러개인 경우는 스페이스로 구분 )
 
   ~~~
-
-  ~~~
-
   사용 <form action = "{% url 'polls:vote' question.id %}" method="POST">
-
   미사용 <form action = "/polls/3/vote/" method="POST">
-
-  ~~~
-
   ~~~
 
   - {% url %} tag 를 사용하여 손쉽게 작업
 
 - {% with %}
 
+  ~~~
   {% with total = User.count() %}
-
-  ​	{{ total }} people
-
+  	{{ total }} people
   {% endwith %}
 
   or
 
   {% with User.count() as total %}
-
-  ​	{{ total }} people
-
+  	{{ total }} people
   {% endwith %}
+  ~~~
 
   특정 값을 변수에 저장해 두는 기능
 
@@ -167,66 +138,34 @@ rendering 전 파일은 template code /  rendering 후의 파일은 template fil
 - baseParent.html
 
   ~~~
-
-  ~~~
-
   <html>
   <head>
-
-  ​	<title>{% block title %}Hello{% endblock %}</title>
-
+  	<title>{% block title %}Hello{% endblock %}</title>
   </head>
-
   <body>
-
-  ​	<div id="sidebar">
-
-  ​		{% block sidebar %}
-
-  ​		<ul>
-
-  ​			<li>a</li>
-
-  ​		</ul>
-
-  ​		{% endblock %}
-
-  ​	</div>
-
-  ​	<div id="content">
-
-  ​		{% block content %}
-
-  ​		{% endblock %}
-
-  ​	</div>
-
+  	<div id="sidebar">
+  		{% block sidebar %}
+  		<ul>
+  			<li>a</li>
+  		</ul>
+  		{% endblock %}
+  	</div>
+  	<div id="content">
+  		{% block content %}
+  		{% endblock %}
+  	</div>
   </body>
-
   </html>
-
-  ~~~
-
   ~~~
 
 - contentChild.html
 
   ~~~
-
-  ~~~
-
   {% extends "baseParent.html" %}
-
   {% block title %}World{% endblock %}
-
   {% block content %}
-
-  ​	<h1>Hello World</h1>
-
+  	<h1>Hello World</h1>
   {% endblock %}
-
-  ~~~
-
   ~~~
 
 - contentChild.html 파일 rendering 결과
