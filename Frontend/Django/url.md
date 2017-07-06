@@ -14,7 +14,7 @@ urlpatterns = [
 
 </pre>
 
-- include() 는 다른 URL 패턴을 포함시킬 때 항상 사용하며, admin.site.urls 만 예외다.
+- include() 는 다른 URL 패턴을 포함시킬 때 항상 사용하며,  admin.site.urls 만 예외다.
 
 ### url() argument
 
