@@ -80,10 +80,15 @@ class Album(models.Model):
 
 
   - CharField
+
   - DateTimeField
+
   - FileField
+
   - ImageField
+
   - TextField
+
   - 그 외의 Field Types  https://docs.djangoproject.com/en/1.11/ref/models/fields/#model-field-types
 
 - **Relationshios**
@@ -154,3 +159,13 @@ class Album(models.Model):
   **__str__() ( Python 3 )**
 
   파이썬3 의 경우에는, __unicode__() 대신에 __str__() 로 선언합니다.
+
+
+
+#### 기존 DB 에서 모델 추출하기
+
+- python manage.py inspectdb
+
+바로적용하기
+
+- python manage.py inspectdb > models.py
